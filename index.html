@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/me-sf.png" width="500" height="300">
+            </div>
+            <h1>Luis Jimenez Castañeda</h1>
+            <h2>Ingeniero de Software - UNMSM - Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/luis.f.jimenezcastaneda/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UCZgm3skXq-OoX_PC1AKxj-w"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Luisjc20"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luis-francisco-jimenez-casta%C3%B1eda-983392259/?originalSubdomain=pe"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Luis Jimenez,</span> profesional con estudios en la carrera de ingeniería de software en la UNMSM y pedagogía en UTEL. Responsable, honesto, proactivo, comprometido con mi trabajo y predispuesto a trabajar en equipo, con deseo de superación a diario y con buen desempeño en el trabajo bajo presión.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            03-02-1993
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            +51 997299610
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luis.jimenez9@unmsm.edu.pe
+                        </li>
+                        <li>
+                            <strong>Blog</strong>
+                            <a href="https://web8730.wordpress.com/">https://web8730.wordpress.com/</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Ajedres, Gym y puzzles</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Balada, pop y rock</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Amo Viajar</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Fútbol, tennis y basquetball</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Me encanta la lectura</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Me gusta salir con los amigos</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button >
+                <a href="/CV.pdf" download="CV" >Descargar CV  </a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL & SQL server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node JS & Express JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Machine Learning</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Docker</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git, Github & Gitlab</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C & C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visual basic</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de software</h4>
+                        <span class="casa">Universidad mayor de San Marcos</span>
+                        <span class="fecha">2015, 2020 - Actualidad</span>
+                        <p>Como profesional en Ingeniería de Software, tengo experiencia en el diseño, desarrollo y mantenimiento de soluciones tecnológicas innovadoras. Mi enfoque se basa en la creación de software de alta calidad, asegurando su funcionalidad, seguridad y eficiencia. Con habilidades en diversos lenguajes de programación y herramientas, junto con un enfoque analítico para resolver problemas, contribuyo al éxito de proyectos y equipos de desarrollo. Soy un profesional proactivo, colaborador y comprometido con la excelencia, listo para enfrentar nuevos desafíos en el ámbito de la ingeniería de software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Pedagogía</h4>
+                        <span class="casa">UTEL Universidad Tecnológica Latinoamericana en linea</span>
+                        <span class="fecha">2020 - 2020 (Concluido)</span>
+                        <p>Como profesional en Pedagogía, tengo una sólida formación en teorías y metodologías educativas que me permite diseñar y desarrollar estrategias de enseñanza efectivas. Mi enfoque se centra en comprender las necesidades y estilos de aprendizaje de mis estudiantes para crear un ambiente educativo inclusivo y motivador. Con habilidades en la planificación curricular, evaluación educativa y gestión de aulas, busco fomentar el desarrollo integral de mis alumnos. Mi pasión por la educación y el compromiso con el aprendizaje continuo me impulsan a mejorar constantemente mis habilidades pedagógicas. Soy un educador dedicado, creativo y empático, listo para inspirar y guiar a los estudiantes hacia su máximo potencial académico y personal.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería mecatrónica</h4>
+                        <span class="casa">Pontificie universidad católica del Perú</span>
+                        <span class="fecha">2011-2015(Sin concluir)</span>
+                        <p>Como profesional en Ingeniería Mecatrónica, combino conocimientos de ingeniería mecánica, electrónica y de control para diseñar y desarrollar sistemas y dispositivos automatizados. Mi enfoque se basa en integrar de manera eficiente componentes mecánicos y electrónicos, buscando optimizar la funcionalidad y rendimiento de proyectos tecnológicos. Con habilidades en el diseño CAD, programación de microcontroladores y sistemas de automatización, puedo crear soluciones innovadoras en diversos sectores industriales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Master en Big Data y Business Intelligence</h4>
+                        <span class="casa">Escuela de negocios europea de Barcelona</span>
+                        <span class="fecha">2023 (Concluido)</span>
+                        <p>Tengo una sólida base en la gestión y análisis de datos para impulsar la toma de decisiones estratégicas en el mundo empresarial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                
+                
+                <div class="item izq">
+                    <h4>Business English</h4>
+                    <span class="casa">Universidad Isabel I de Castilla</span>
+                    <span class="fecha">2023 (Concluido)</span>
+                    <p> He aprendido a interactuar de maneral oral y escrita en inglés a un nivel avanzado en el ámbito de los negocios.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Diplomado en tecnología digital y Gestión educativa</h4>
+                    <span class="casa">Universidad nacional de ingeniería</span>
+                    <span class="fecha">2023(En progreso)</span>
+                    <p> Este diplomado me permite estar a la vanguardía en la educación en concordancia con los nuevos avances de la tecnología como la inteligencia artificial. Por ende, se analizan diversas estrategías para aplicarlas en el ámbito de la educación básica y superior</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Docente de matemáticas y ciencias</h4>
+                        <span class="casa">Colegio Particular “IEP William Shakeapeare”</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Funciones: Dictar clases y asesorar virtualmente utilizando diversas herramientas tecnológicas. Se utilizó diversas metodologías de E-Learning tales como: Microlearning (Los estudiantes investigaban sus propias respuestas a las diversas problemáticas), aprendizaje colaborativo (trabajo en equipo y evaluación muta), educación basada en competencias y el uso de diversas herramientas educativas digitales (Quizz, Kahoot, Google Suits, etc).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Docente de ciencias</h4>
+                        <span class="casa">Academia “Euler Gauss”</span>
+                        <span class="fecha">2022</span>
+                        <p>Funciones: Elaborar material interactivo, dictar clases y asesorar virtualmente a los alumnos. Se utilizó diversas metodologías de E-Learning tales como: Microlearning (Los estudiantes investigaban sus propias respuestas a las diversas problemáticas), aprendizaje colaborativo (trabajo en equipo y evaluación muta), educación basada en competencias y el uso de diversas herramientas educativas digitales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor en sistemas e informática</h4>
+                        <span class="casa">Empresa “AB Technology”</span>
+                        <span class="fecha">noviembre – Diciembre (2021)</span>
+                        <p>Funciones: Elaborar sistemas para automatizar tareas repetitivas con gran cantidad de datos en Excel. Manejo e implementación de macros en VBA para que varios usuarios trabajan en simultáneo sobre un Libro u hoja de Excel.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemática, química y física</h4>
+                        <span class="casa">Colegio Particular “San Marcos”</span>
+                        <span class="fecha">2019-2022</span>
+                        <p>Funciones: Elaborar material de clase como folletos y video-tutoriales para que refuercen los temas vistos en las clases presenciales. También, dictar clases y asesorar virtualmente a los alumnos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de computación - Ofimática</h4>
+                        <span class="casa">Instituto Superior ISCEL Exploring Language</span>
+                        <span class="fecha">2019-2021</span>
+                        <p>Funciones: dictar clases de ofimática (Excel, Word, Power Point). En los últimos meses he dictado clases de “Excel profesional” el cual se enfoca en el manejo de macros y los alumnos obtienen un conocimiento solido de programación en Excel con VBA.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de primaria de inglés y matemáticas</h4>
+                        <span class="casa">Colegio particular “ENMANUEL”</span>
+                        <span class="fecha">Marzo - Diciembre del 2018</span>
+                        <p>Funciones: dictado de clases de inglés y matemática a niños desde primero hasta sexto de primaria. También, daba sesiones de tutoría a los alumnos de quinto de primaria. Se logró un gran avance en cuanto al nivel de aprendizaje de cada estudiante ya que obtuvieron buenas calificaciones. En el área de inglés, trabajemos diversas dinámicas y canciones en inglés con el fin de aplicar diversas metodologías (Presentation, practise and production; tasked-based learning entre otros) para una buena enseñanza.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tutor de 5to y 2do de secundaria</h4>
+                        <span class="casa">Colegio Saco Oliveros</span>
+                        <span class="fecha">Agosto - diciembre de 2017</span>
+                        <p>Funciones: dictado de charlas relacionadas a psicológicos y atender de manera personalizada a cada estudiante con el fin de guiarlos y orientarlos en su proceso de aprendizaje. También, estaba a cargo de organizar eventos educativos y manejar los registros de notas de manera física y virtual.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="grid-container">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UE0uYLveZq4?si=mbx7tfsry5GZQtLK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Uso del lenguaje visual basic para aplicaciones en Excel</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/laSv9Csh5rk?si=z6hvUrgFYBYzlaev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Clase de química para secundaria</p>
+                </div>
+                <!-- Repite esto para los otros tres videos -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div id="miFormulario" class="fila">
+                <!-- Formulario -->
+                <form class="col" action="https://formsubmit.co/luisimt20@hotmail.com" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="text" name="phone" id="phone"  placeholder="Número telefónico">
+                    <input type="text"  name="email" id="email" placeholder="Dirección de correo">
+                    <input type="text"  name="topic"  id="topic" placeholder="Tema">
+                    <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+               
+                <!-- Mapa -->
+                
+                <div class="col">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156606.96207274243!2d-77.05179533089783!3d-11.976076110520507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d86e4d52c0dd%3A0x5693f4015603d26a!2sCarabayllo!5e1!3m2!1ses!2spe!4v1694290587064!5m2!1ses!2spe" width="100%" height="110%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lima - Perú
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 997299610
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luis.jimenez9@unmsm.edu.pe
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/luis.f.jimenezcastaneda/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UCZgm3skXq-OoX_PC1AKxj-w"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Luisjc20"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luis-francisco-jimenez-casta%C3%B1eda-983392259/?originalSubdomain=pe"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
